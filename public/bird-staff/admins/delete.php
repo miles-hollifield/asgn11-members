@@ -48,4 +48,4 @@ if(is_post_request()) {
 
 </div>
 
-<?php include(SHARED_PATH . '/bird-staff_footer.php'); ?>
+<?php include(SHARED_PATH . '/bird-staff-footer.php'); ?>
