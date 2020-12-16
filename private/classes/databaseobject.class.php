@@ -112,14 +112,13 @@ class DatabaseObject {
     }
 
     public function delete() {
-        $sql = "DELETE FROM " . static::$table_name . "  ";
-        $sql .= "WHERE id = :id ";
-        $sql = "LIMIT 1";
+        $sql = "DELETE FROM " . static::$table_name . " ";
+        $sql .= "WHERE id='" . $this->id . "' ";
+        $sql .= "LIMIT 1";
         $stmt = self::$database->prepare($sql);
-        $stmt->bindValue(':id', $this->id );
         $result = $stmt->execute();
-
-        return $result;
+      
+      return $result;
 
     }
 
