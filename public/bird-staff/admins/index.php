@@ -6,8 +6,7 @@
 ?>
   
 <?php $admins = Admin::find_all(); ?>
-  
-?>
+
 <?php $page_title = 'Admins'; ?>
 <?php include(SHARED_PATH . '/bird-staff-header.php'); ?>
 

@@ -24,6 +24,9 @@
         <a href="<?php echo url_for('/index.php'); ?>">
           <img class="bike-icon" src="<?php echo url_for('/images/tufted-titmouse.jpg') ?>" /><br />
           WNC Birds
-        </a>
+        </a>      
       </h1>
+      <ul style="padding-left: 0; text-align: center;">
+        <li><a href="<?php echo url_for('/bird-staff/login.php'); ?>">Login</a></li>
+      </ul>
     </header>
