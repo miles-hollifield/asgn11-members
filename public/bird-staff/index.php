@@ -1,5 +1,7 @@
 <?php require_once('../../private/initialize.php'); ?>
 
+require_login();
+
 <?php $page_title = 'Bird Staff Menu'; ?>
 <?php include(SHARED_PATH . '/bird-staff-header.php'); ?>
 

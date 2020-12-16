@@ -5,6 +5,16 @@ function require_login() {
     redirect_to(url_for('/bird-staff/index.php'));
   }
 }
+
+function require_admin() {
+  global $session;
+  if($session->user_level !== 'a') {
+    redirect_to(url_for('/bird-staff/index.php'));
+  } else {
+    // Proceed
+  }
+}
+
 function display_errors($errors=array()) {
 //  function display_errors($this->errors()) {}
   $output = '';
